@@ -9,7 +9,7 @@ import { API_URL } from '../constants/apiConstants';
 export const getUsersList = () => {
     return (dispatch)=> {
         dispatch(usersListRequest());
-        fetch(`${API_URL}/?results=50`)
+        fetch(`${API_URL}/?results=500&nat=us,dk,fr,gb`)
             .then((response) => response.json())
             .then(data => {
                 const { error, results } = data;
