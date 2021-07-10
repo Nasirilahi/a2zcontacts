@@ -4,7 +4,7 @@ import {
     USERS_LIST_FAILURE,
 } from '../constants/actionsConstants';
 
-const genA2ZObj = (charA = 'A', charZ = 'Z')  => {
+const genA2ZObj = (charA = 'a', charZ = 'z')  => {
     const obj = {};
     for (let i = charA.charCodeAt(0), j = charZ.charCodeAt(0); i <= j; ++i) {
         obj[String.fromCharCode(i)] = [];
@@ -18,7 +18,7 @@ const getSections = users => {
     }
 
     const sections = users.reduce((acc, user) => {
-        let firstLetter = user?.name?.first[0].toLocaleUpperCase();
+        let firstLetter = user?.name?.first[0].toLocaleLowerCase();
         if (!acc[firstLetter]) {
           acc[firstLetter] = { title: firstLetter, data: [user] };
         } else {
