@@ -11,6 +11,8 @@ dist
 .DS_Store
 .env*
 
+# testing 
+coverage
 
 #package managare logs 
 yarn-debug.log
