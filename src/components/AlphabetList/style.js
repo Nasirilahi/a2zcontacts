@@ -4,7 +4,7 @@ export const mainContainer = css`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-    padding-Top: 50px;
+	padding-Top: 50px;
 `;
 
 export const headerTitle = css`
@@ -56,4 +56,64 @@ export const tabItem = (isSelected, isClickble) => css`
 		bottom: 1px;
 		right: 4px;
 	}
+`;
+
+export const modalContaier = css`
+	display: flex;
+	position: relative;
+	padding: 10px 10px 40px 10px;
+`;
+
+export const avatarImg = css`
+	margin: 0px 15px 0 15px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+`;
+
+export const detailContainer = css`
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+`;
+export const userName = css`
+	color: #aab4c8;
+	font-size: 32px;
+	font-family: sans-serif;
+	margin-bottom: 20px;
+`;
+
+export const contactItem = css`
+	margin-bottom: 5px;
+	width: 100%;
+	padding-right: 150px;
+	display: flex;
+`;
+
+export const contactKey = css`
+	font-weight: 600;
+	margin-right: 10px;
+	width: 65px;
+`;
+
+export const blurShadow = css`
+	border: 1.5px solid rgba(0, 0, 0, 0.5);
+	filter: blur(6px);
+`;
+
+export const closeIcon = css`
+	padding: 10px;
+	position: absolute;
+	z-index: 5;
+`;
+
+export const gradInfo = css`
+    position: absolute;
+	right: -80px;
+    top: 80px;
+	transform: rotate(90deg);
+	padding: 5px 15px 5px 15px;
+	background-image: linear-gradient(#ef5050, #dea888);
+    color: white;
+    font-family: sans-serif;
 `;
