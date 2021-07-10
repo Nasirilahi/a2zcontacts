@@ -1,6 +1,9 @@
-import React, { useEffect } from 'react';
+/** @jsx jsx */
+import { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import Loader from 'react-loader-spinner';
+import { css, jsx } from '@emotion/react';
 import { getUsersList } from '../../actions/fetchUsersList';
 import AlphabetList from '../../components/AlphabetList/AlphabetList';
 
@@ -14,9 +17,13 @@ const App = (props) => {
 	}
 
 	return (
-		<div>
+		<div css={{
+			display: 'flex',
+			alignItems: 'center',
+			justifyContent: 'center',
+		}}>
 			{isLoading ? (
-				<div>Loading....</div>
+				<Loader type="Circles" color="#aab4c8" height={120} width={120} />
 			) : (
 				<AlphabetList users={users} />
 			)}
