@@ -5,6 +5,7 @@ export const mainContainer = css`
 	flex-direction: column;
 	align-items: center;
 	padding-Top: 50px;
+	max-width: 1144px;
 `;
 
 export const headerTitle = css`
@@ -13,20 +14,39 @@ export const headerTitle = css`
 	text-align: center;
 `;
 
+export const keysContainer = css`
+	width: 100%;
+	overflow-x: auto;
+	white-space: nowrap;
+	scrollbar-width: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+`;
+
 export const listContainer = css`
 	border: 1px solid #aab4c8;
 	border-top: 0;
 	background-color: #f1f1f1;
-	width: 1144px;
 	padding: 30px 0 30px 30px;
 	border-radius: 0 0 8px 8px;
+	width: 100%;
 	span {
 		display: inline-block;
-		width: 47%;
+
 		border-bottom: 1px dotted #aab4c8;
 		margin-right: 30px;
 		padding: 10px 0 10px 10px;
 		font-family: sans-serif;
+		@media only screen and (min-width: 1056px) {
+			width: 47%;
+		}
+		@media only screen and (min-width: 647px) and (max-width: 1055px) {
+			width: 45%;
+		}
+		@media only screen and (max-width: 646px) {
+			width: 100%;
+		}
 	}
 `;
 
@@ -62,6 +82,9 @@ export const modalContaier = css`
 	display: flex;
 	position: relative;
 	padding: 10px 10px 40px 10px;
+	@media only screen and (max-width: 781px) {
+		padding: 5px 5px 20px 5px;
+	}
 `;
 
 export const avatarImg = css`
@@ -69,6 +92,12 @@ export const avatarImg = css`
 	height: 100px;
 	width: 100px;
 	border-radius: 50px;
+	@media only screen and (max-width: 781px) {
+		height: 60px;
+		width: 60px;
+		border-radius: 30px;
+		margin: 0px 5px 0 15px;
+	}
 `;
 
 export const detailContainer = css`
@@ -81,6 +110,10 @@ export const userName = css`
 	font-size: 32px;
 	font-family: sans-serif;
 	margin-bottom: 20px;
+	@media only screen and (max-width: 781px) {
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
 `;
 
 export const contactItem = css`
@@ -88,12 +121,20 @@ export const contactItem = css`
 	width: 100%;
 	padding-right: 150px;
 	display: flex;
+	@media only screen and (max-width: 781px) {
+		padding-right: 20px;
+		font-size: 12px;
+	}
 `;
 
 export const contactKey = css`
 	font-weight: 600;
 	margin-right: 10px;
 	width: 65px;
+	@media only screen and (max-width: 781px) {
+		width: 48px;
+		margin-right: 5px;
+	}
 `;
 
 export const blurShadow = css`
@@ -108,12 +149,18 @@ export const closeIcon = css`
 `;
 
 export const gradInfo = css`
-    position: absolute;
+	position: absolute;
 	right: -80px;
-    top: 80px;
+	top: 80px;
 	transform: rotate(90deg);
 	padding: 5px 15px 5px 15px;
 	background-image: linear-gradient(#ef5050, #dea888);
-    color: white;
-    font-family: sans-serif;
+	color: white;
+	font-family: sans-serif;
+	@media only screen and (max-width: 781px) {
+		font-size: 12px;
+		padding: 2px 8px 2px 8px;
+		right: -65px;
+		top: 65px;
+	}
 `;

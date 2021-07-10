@@ -15,7 +15,8 @@ import {
 	contactKey,
 	blurShadow,
 	closeIcon,
-	gradInfo
+	gradInfo,
+	keysContainer
 } from './style';
 
 const AlphabetList = ({ users }) => {
@@ -49,7 +50,7 @@ const AlphabetList = ({ users }) => {
 	return (
 		<div css={mainContainer}>
 			<div css={headerTitle}>Contact List</div>
-			<div>{createTitleKeys}</div>
+			<div css={keysContainer}>{createTitleKeys}</div>
 			<div css={listContainer}>
 				{users[currentTitle].map((item) => (
 					<span key={item.login.uuid} onClick={() => itemSelectHandler(item)}>{`${item.name
