@@ -38,6 +38,11 @@ $ yarn test
 $ yarn test:coverage
 ```
 
+Or test on the following url:- 
+
+```
+https://a2zcontacts.vercel.app/
+```
 
 ### Next Steps
 * Test cases
