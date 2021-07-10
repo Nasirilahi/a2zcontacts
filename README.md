@@ -44,6 +44,11 @@ Or test on the following url:-
 https://a2zcontacts.vercel.app/
 ```
 
+Here is the glimpse of the deployed code on above url 
+
+<img width="1350" alt="Screen Shot 2021-07-11 at 12 13 26 AM" src="https://user-images.githubusercontent.com/18344021/125173426-ecfd2580-e1dc-11eb-8ab5-5daca4475f96.png">
+
+
 ### Next Steps
 * Test cases
 * Performance optimisations 
