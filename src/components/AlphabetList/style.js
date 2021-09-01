@@ -6,6 +6,12 @@ export const mainContainer = css`
 	align-items: center;
 	padding-Top: 50px;
 	max-width: 1144px;
+	@media only screen and (min-width: 647px) and (max-width: 1055px) {
+		width: 100%;
+	}
+	@media only screen and (max-width: 646px) {
+		width: 100%;
+	}
 `;
 
 export const headerTitle = css`
@@ -33,7 +39,6 @@ export const listContainer = css`
 	width: 100%;
 	span {
 		display: inline-block;
-
 		border-bottom: 1px dotted #aab4c8;
 		margin-right: 30px;
 		padding: 10px 0 10px 10px;
